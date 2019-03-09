@@ -10,7 +10,8 @@ def valid_move?( board, index)
     puts "out of range"
     return false
   else
-    puts "all ok " + index
+    puts "all ok "
+    puts index
     return true
   end
 end
