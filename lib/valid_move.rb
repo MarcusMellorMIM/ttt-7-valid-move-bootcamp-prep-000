@@ -3,14 +3,14 @@ def valid_move?( board, index)
   if position_taken?( board, index )
     puts "position taken"
 
-    false
+    return false
     
   elseif index < 0 || index > 8
     puts "out of range"
-    false
+    return false
   else
     puts "all ok"
-    true
+    return true
   end
 end
 
