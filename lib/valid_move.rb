@@ -6,13 +6,13 @@ def valid_move?( board, index)
 
     return false
     
-  elseif index < 0 || index > 8
-    puts "out of range"
-    return false
-  else
-    puts "all ok "
-    puts index
+  elseif index >= 0 && index <= 8
+    puts "in  range"
     return true
+  else
+    puts "out of range "
+    puts index
+    return false
   end
   
   puts "should be here"
