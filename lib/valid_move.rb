@@ -1,14 +1,15 @@
 # code your #valid_move? method here
 def valid_move?( board, index)
   if position_taken?( board, index )
-    puts("position taken")
+    puts "position taken"
+
     false
     
   elseif index < 0 || index > 8
-    puts("out of range")
+    puts "out of range"
     false
   else
-    puts("all ok")
+    puts "all ok"
     true
   end
 end
